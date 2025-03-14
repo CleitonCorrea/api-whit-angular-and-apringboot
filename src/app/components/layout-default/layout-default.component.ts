@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, input } from '@angular/core';
 
 @Component({
   selector: 'app-layout-default',
@@ -7,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrl: './layout-default.component.css'
 })
 export class LayoutDefaultComponent {
+@Input() title: string="";
+@Input() primaryButton: string= "";
+@Input() secundaryButton: string = "";
 
 }
